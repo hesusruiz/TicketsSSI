@@ -1,0 +1,37 @@
+@startuml "EBSI_node"
+!include c4/C4_Container.puml
+
+LAYOUT_TOP_DOWN
+LAYOUT_WITH_LEGEND()
+
+
+Person(user, "User", "Ticket holder")
+
+System_Boundary(c1, "EBSI node"){
+    
+    Container(proxy, "Proxy server", "Nignx", "TLS termination, access control, basic DoS defense")
+
+    Container(app_server, "Application server", "Beego", "Display of internal monitoring informtion and performs operations on the Ethereum node")
+
+    ContainerDb(cb, "Data Store", "CEF Context Broker", "Stores JSON-LD data using the standard ETSI NGSI-LD interface")
+
+    Container(ethereum, "Ethereum node", "Pantheon", "Connects to the blockchain network")
+
+
+}
+
+System_Ext(eth_network, "Ethereum network")
+
+
+Rel(user, proxy, "Uses", "HTTPS, JSON-RPC")
+
+Rel(proxy, app_server, "Uses", "HTTP")
+Rel(proxy, cb, "Read/write", "NGSI-LD")
+Rel(proxy, ethereum, "Uses", "JSON-RPC Ethereum API")
+
+Rel_R(ethereum, eth_network, "Other Ethereum nodes")
+
+Lay_R(app_server, cb)
+Lay_R(cb, ethereum)
+
+@enduml
