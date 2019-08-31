@@ -22,42 +22,48 @@ skinparam rectangle<<person>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor PERSON_BG_COLOR
-    BorderColor #073B6F
+'    BorderColor #073B6F
+    BorderColor #000000
 }
 
 skinparam rectangle<<external_person>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor EXTERNAL_PERSON_BG_COLOR
-    BorderColor #8A8A8A
+'    BorderColor #8A8A8A
+    BorderColor #000000
 }
 
 skinparam rectangle<<system>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor SYSTEM_BG_COLOR
-    BorderColor #3C7FC0
+'    BorderColor #3C7FC0
+    BorderColor #000000
 }
 
 skinparam rectangle<<external_system>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
-    BorderColor #8A8A8A
+'    BorderColor #8A8A8A
+    BorderColor #000000
 }
 
 skinparam database<<system>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor SYSTEM_BG_COLOR
-    BorderColor #3C7FC0
+'    BorderColor #3C7FC0
+    BorderColor #000000
 }
 
 skinparam database<<external_system>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
-    BorderColor #8A8A8A
+'    BorderColor #8A8A8A
+    BorderColor #000000
 }
 
 ' Layout

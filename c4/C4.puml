@@ -18,12 +18,13 @@ skinparam maxMessageSize 150
 
 skinparam rectangle {
     StereotypeFontSize 12
-    shadowing false
+'    shadowing false
+    BorderThickness 1
 }
 
 skinparam database {
     StereotypeFontSize 12
-    shadowing false
+'    shadowing false
 }
 
 skinparam Arrow {
@@ -33,7 +34,7 @@ skinparam Arrow {
 }
 
 skinparam rectangle<<boundary>> {
-    Shadowing false
+'    Shadowing false
     StereotypeFontSize 0
     FontColor #444444
     BorderColor #444444

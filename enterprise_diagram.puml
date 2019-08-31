@@ -4,6 +4,7 @@
 LAYOUT_TOP_DOWN
 LAYOUT_WITH_LEGEND()
 
+actor Perico
 
 Person(user, "User", "Ticket holder")
 
